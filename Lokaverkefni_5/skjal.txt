@@ -1,0 +1,24 @@
+$kallar = [
+['file' => 'batman'],
+['file' => 'superman],
+['file' => 'wonderwoman'],
+['file' => 'greenlantern'],
+['file' => 'flash'],
+['file' => 'aquaman'],
+
+];
+
+$image = "images/{$kallar[$i]['file']}.jpg";
+$name = $kallar[$i]['file'];
+
+<?php include './includes/kallar.php'; ?>
+
+
+<a href="Characters/<?php ucfirst($name) ?>.html">
+                    <div style="background: url('$image'); background-size: 100%;" class="characters" id="$name">
+                        <img src="">
+                        <p>
+                            ucfirst($name);
+                        </p>
+                    </div>
+                </a>

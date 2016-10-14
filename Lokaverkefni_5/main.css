@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(to left, #00F, #F00);
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+}
+.byrjun{
+    width: 100%;
+    float: left;
+    height: 20em;
+    margin: 0;
+    padding: 0;
+}
+.dc{
+    display: none;
+}
+.marvel{
+    display: none;
+}
+.marvel2{
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    cursor: default;
+}
+.dc2{
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    cursor: default;
+}
+.dc2:hover ~ .dc{
+    display: block;
+    background: linear-gradient(to left, #00F 40%, #F00);
+    width: 100%;
+    float: left;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: -20em;
+  animation: DC .25s;
+  animation-timing-function: linear;
+}
+.marvel2:hover ~ .marvel{
+    display: block;
+    background: linear-gradient(to right, #F00 40%, #00F);;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: -20em;
+  animation: Marvel .25s;
+  animation-timing-function: linear;
+}   
+.Marvel_Logo{
+    left: 10vh;
+    height: 20em;
+    width: auto;
+    position: absolute;
+    margin-top: 20vh;
+}
+.DC_Logo{
+    right: 10vh;
+    height: 20em;
+    width: auto;
+    position: absolute;
+    margin-top: 20vh;
+    
+}
